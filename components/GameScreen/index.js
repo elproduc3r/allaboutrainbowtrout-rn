@@ -57,14 +57,23 @@ export default class GameScreen extends React.Component {
 		}, 1600);
 	}
 
+	stopShowingFish() {
+		let newFishArr = this.state.fishArr;
+		newFishArr.map(item => item.appear = false);
+		this.setState({
+			fishArr : newFishArr
+		});
+	}
+
 	startCountDownTimer() {
 		timer.setInterval(this, 'countDownTimerInterval', () => {
 			if (this.state.timeRemaining > 0) {
 				this.setState({
-					timeRemaining: --this.state.timeRemaining
+					timeRemaining: this.state.timeRemaining - 1
 				});
 			} else {
 				timer.clearInterval(this, 'countDownTimerInterval');
+				this.stopShowingFish();
 				this.setState({
 					gameStatus: GAME_STATUS.GAME_OVER,
 				});
@@ -89,6 +98,7 @@ export default class GameScreen extends React.Component {
 	}
 
 	clickFish() {
+		// console.log("click");
 		if (!this.isFishClicked) {
 			const newScore = this.state.score + 1;
 			this.setState({

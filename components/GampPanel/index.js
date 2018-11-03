@@ -102,7 +102,6 @@ export default class GamePanel extends React.Component {
 							<View
 								style={{flex: 50, paddingLeft: btnCtnLOffset, paddingRight: btnCtnROffset}}
 							>
-								{/* {(this.panelType == 'game')? buttonGroup : pingPong} */}
 								{(this.panelType == 'game')? buttonGroup : <VideoPlayer />}
 							</View>
 							<View style={{flex: 22}}></View>

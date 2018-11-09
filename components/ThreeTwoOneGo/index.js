@@ -76,6 +76,7 @@ const styles = {
     textStyle: {
         fontFamily: 'Grobold',
         fontSize: 120,
+        lineHeight: 200,
         color: 'white',
         textShadowColor: 'black',
         textShadowOffset: { width: 3, height: 3 },

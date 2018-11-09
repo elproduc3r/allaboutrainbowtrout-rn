@@ -3,7 +3,7 @@
   "expoServerPort": null,
   "packagerPort": null,
   "packagerPid": null,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null
+  "expoServerNgrokUrl": "https://yp-54w.anonymous.allaboutrainbowtrout-rn.exp.direct",
+  "packagerNgrokUrl": "https://packager.yp-54w.anonymous.allaboutrainbowtrout-rn.exp.direct",
+  "ngrokPid": 46780
 }

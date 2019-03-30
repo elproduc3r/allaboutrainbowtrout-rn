@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { Video } from 'expo';
 import { MaterialIcons } from '@expo/vector-icons';
-import { SCREEN } from '../../utiles';
+import { SCREEN, VIDEOS } from '../../utiles';
 
 export default class VideoPlayer extends React.Component {
 	state = {
@@ -31,7 +31,7 @@ export default class VideoPlayer extends React.Component {
 			<View style={styles.container}>
 				<View style={{flex: 1}}>
 					<Video
-						source={{ uri: 'http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4' }}
+						source={{ uri: 'http://theappproducer.com/allaboutrainbowtrout/videos/intro.m4v' }}
 						shouldPlay={this.state.shouldPlay}
 						resizeMode="cover"
 						style={{ width: videoWidth, height: videoHeight }}

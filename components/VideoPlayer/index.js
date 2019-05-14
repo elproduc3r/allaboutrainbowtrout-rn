@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, ScrollView, Text } from 'react-native';
 import { Video } from 'expo';
 import { MaterialIcons } from '@expo/vector-icons';
 import { SCREEN, VIDEOS } from '../../utiles';
@@ -24,34 +24,20 @@ export default class VideoPlayer extends React.Component {
 	}
 	render() {
 		const { height } = SCREEN;
-		
+
 		const videoHeight = height * 0.8 * 0.5;
 		const videoWidth = videoHeight * 2;
 		return (
 			<View style={styles.container}>
 				<View style={{flex: 1}}>
-					<Video
-						source={{ uri: 'http://theappproducer.com/allaboutrainbowtrout/videos/intro.m4v' }}
-						shouldPlay={this.state.shouldPlay}
-						resizeMode="cover"
-						style={{ width: videoWidth, height: videoHeight }}
-						isMuted={this.state.mute}
-					/>
-
-					<View style={styles.controlBar}>
-						<MaterialIcons
-							name={this.state.mute ? "volume-mute" : "volume-up"}
-							size={45}
-							color="white"
-							onPress={this.handleVolume}
-						/>
-						<MaterialIcons
-							name={this.state.shouldPlay ? "pause" : "play-arrow"}
-							size={45}
-							color="white"
-							onPress={this.handlePlayAndPause}
-						/>
-					</View>
+					<ScrollView>
+						<View>
+							<Text>Add Stuff here</Text>
+							<Text style={{paddingLeft: 15}}>Text with indent</Text>
+							<Text>{"\u2022 "} Text with bullet points</Text>
+							<Text style={{paddingLeft: 15}}>{"\u2022 "} Text with ident and bullet points</Text>
+						</View>
+					</ScrollView>
 				</View>
 			</View>
 		);

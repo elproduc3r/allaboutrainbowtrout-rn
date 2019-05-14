@@ -49,7 +49,7 @@ export default class GamePanel extends React.Component {
 			inputRange: [0, 1],
 			outputRange: [0, 1]
 		});
-		
+
 		const panelTransformStyle = {
 			transform: [{ scale: panelScale }]
 		};
@@ -83,7 +83,7 @@ export default class GamePanel extends React.Component {
 		</Animated.View>)
 
 		const pingPong = (<Image source={IMAGES.loading} style={{ alignSelf: 'center' }} resizeMode='center' />)
-		
+
 		return (
 			<View style={{flex: 1}}>
 				<View style={{flex: 10}}></View>

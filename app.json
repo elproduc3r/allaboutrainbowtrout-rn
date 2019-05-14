@@ -8,7 +8,7 @@
     "platforms": ["ios", "android"],
     "version": "1.0.0",
     "orientation": "landscape",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/images/appicon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -22,7 +22,7 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.jsguru.allAboutRainbowTrout"
+      "bundleIdentifier": "com.theappproducer.AllAboutRainbowTroutGame"
     },
     "android": {
       "package": "com.jsguru.allAboutRainbowTrout"

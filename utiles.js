@@ -8,7 +8,7 @@ export const IMAGES = {
     'panel': require('./assets/images/window_home.png'),
     'panel-b': require('./assets/images/window_learn.png'),
     'play': require('./assets/images/tile_play.png'),
-    'learn': require('./assets/images/tile_learn.png'),
+    'learn': require('./assets/images/tile_learn2.png'),
     'forest': require('./assets/images/game_window_bkgd.jpg'),
     'yellow_star': require('./assets/images/3stars.png'),
     'gray_star': require('./assets/images/3stars_off.png'),

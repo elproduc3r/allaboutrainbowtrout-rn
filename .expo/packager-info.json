@@ -1,9 +1,9 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": null,
-  "packagerPort": null,
-  "packagerPid": null,
-  "expoServerNgrokUrl": "https://yp-54w.anonymous.allaboutrainbowtrout-rn.exp.direct",
-  "packagerNgrokUrl": "https://packager.yp-54w.anonymous.allaboutrainbowtrout-rn.exp.direct",
-  "ngrokPid": 46780
+  "expoServerPort": 19000,
+  "packagerPort": 19001,
+  "packagerPid": 68067,
+  "expoServerNgrokUrl": "https://yp-54w.colinfran.allaboutrainbowtrout-rn.exp.direct",
+  "packagerNgrokUrl": "https://packager.yp-54w.colinfran.allaboutrainbowtrout-rn.exp.direct",
+  "ngrokPid": 68154
 }
